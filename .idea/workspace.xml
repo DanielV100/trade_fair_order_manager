@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented two buttons for start screen">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/formdev_flatlaf.xml" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented FlatLaf">
+      <change afterPath="$PROJECT_DIR$/src/code/model/FontMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/roboto-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fonts/roboto-light.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade_fair_order_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trade_fair_order_manager.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/daniel/Desktop/trade_fair_order_manager/src/resources/fonts",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.16806722",
@@ -49,6 +51,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/resources" />
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686479659028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented FlatLaf">
+      <created>1686480225236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686480225236</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +130,7 @@
     <MESSAGE value="implemented properties file and getter" />
     <MESSAGE value="added log infos" />
     <MESSAGE value="implemented two buttons for start screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented two buttons for start screen" />
+    <MESSAGE value="implemented FlatLaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented FlatLaf" />
   </component>
 </project>

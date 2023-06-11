@@ -15,7 +15,7 @@ public class NewOrder_OrderManager {
         frameNewOrder.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
        // frameNewOrder.add(createStartView(width, height));
         frameNewOrder.setLayout(null);
-        frameNewOrder.add(new NewOrder_JPanel_ContactData(500, 300));
+        frameNewOrder.add(new NewOrder_JPanel_ContactData(500, 350));
         frameNewOrder.setVisible(true);
     }
 }

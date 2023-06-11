@@ -15,13 +15,27 @@ public class NewOrder_JPanel_ContactData extends JPanel {
     public NewOrder_JPanel_ContactData(int width, int height) {
         this.setBounds(20,10, width, height);
         createJLabels();
-        this.setLayout(new GridLayout(7, 2));
+        this.setLayout(createGridLayout(8, 2));
         JLabel[] jLabels = createJLabels();
         JTextField[] jTextFields = createJTextFields();
-        for (int i = 0; i < jTextFields.length; i++) {
+        for (int i = 0; i < jLabels.length; i++) {
             this.add(jLabels[i]);
-            this.add(jTextFields[i]);
+            if(i == jLabels.length-1) {
+                JTextArea jTextArea = new JTextArea();
+                jTextArea.setFont(controller.createRobotoFont(9, 0));
+                jTextArea.setOpaque(false);
+                jTextArea.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY));
+                this.add(jTextArea);
+            } else {
+                this.add(jTextFields[i]);
+            }
         }
+    }
+
+    private GridLayout createGridLayout(int rows, int cols) {
+        GridLayout gridLayout = new GridLayout(rows, cols);
+        gridLayout.setVgap(10);
+        return gridLayout;
 
     }
 
@@ -30,8 +44,8 @@ public class NewOrder_JPanel_ContactData extends JPanel {
      * @return JLabel[]
      */
     private JLabel[] createJLabels() {
-        String[] metadata = {"Name:", "Company:", "Street:", "Zip code, city, country:", "USt-ID No.:", "Mail:", "Mobile:"};
-        JLabel[] jLabels = new JLabel[7];
+        String[] metadata = {"Name:", "Company:", "Street:", "Zip code, city, country:", "USt-ID No.:", "Mail:", "Mobile:", "Notes:"};
+        JLabel[] jLabels = new JLabel[8];
         for (int i = 0; i < jLabels.length; i++) {
             jLabels[i] = new JLabel();
             jLabels[i].setText(metadata[i]);

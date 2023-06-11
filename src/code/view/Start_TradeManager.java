@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Start_TradeManager {
     Controller controller = new Controller();
 
-    public Start_TradeManager() throws IOException {
+    public Start_TradeManager() {
         JFrame frameStart = new JFrame(controller.getAppProperties("start_trademanager_framestart_name"));
         frameStart.setVisible(true);
     }

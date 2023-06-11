@@ -11,7 +11,7 @@ public class Controller {
     public Controller() {
     }
 
-    public String getAppProperties(String key) throws IOException {
+    public String getAppProperties(String key) {
         return appPropertiesGetter.getAppProperties(key);
     }
 }

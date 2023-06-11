@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented properties file and getter">
-      <change beforePath="$PROJECT_DIR$/src/code/model/AppPropertiesGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/AppPropertiesGetter.java" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="added log infos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686477682157</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added log infos">
+      <created>1686477903472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686477903472</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +108,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="implemented and configured log4j2" />
     <MESSAGE value="implemented properties file and getter" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented properties file and getter" />
+    <MESSAGE value="added log infos" />
+    <option name="LAST_COMMIT_MESSAGE" value="added log infos" />
   </component>
 </project>

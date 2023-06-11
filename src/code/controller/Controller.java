@@ -26,7 +26,7 @@ public class Controller {
     }
 
     public ImageIcon createImageIcons(String path) {
-       return imageIconMaker.createImageIcons(path);
+        return imageIconMaker.createImageIcons(path);
     }
 
     public String getAppProperties(String key) {

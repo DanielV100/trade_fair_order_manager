@@ -34,7 +34,6 @@ public class NewOrder_JPanel_ContactData extends JPanel {
         }
     }
 
-
     /**
      * Method for creating the JLabels with the different metadatas.
      * @return JLabel[]

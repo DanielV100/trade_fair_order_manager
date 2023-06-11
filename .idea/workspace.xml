@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented notes">
-      <change afterPath="$PROJECT_DIR$/src/code/model/TextField_MouseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="changed layout to FlowLayout">
       <change beforePath="$PROJECT_DIR$/src/code/model/TextField_FocusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/TextField_FocusListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/view/NewOrder_JPanel_ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/NewOrder_JPanel_ContactData.java" afterDir="false" />
     </list>
@@ -151,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686490337304</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed layout to FlowLayout">
+      <created>1686506236636</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686506236636</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +183,7 @@
     <MESSAGE value="added logs" />
     <MESSAGE value="implemented logic for adding new order" />
     <MESSAGE value="implemented notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented notes" />
+    <MESSAGE value="changed layout to FlowLayout" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed layout to FlowLayout" />
   </component>
 </project>

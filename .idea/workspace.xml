@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="added log infos">
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented two buttons for start screen">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/formdev_flatlaf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade_fair_order_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trade_fair_order_manager.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     "dart.analysis.tool.window.visible": "false",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.16806722",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -90,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686477903472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented two buttons for start screen">
+      <created>1686479659028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686479659028</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +117,7 @@
     <MESSAGE value="implemented and configured log4j2" />
     <MESSAGE value="implemented properties file and getter" />
     <MESSAGE value="added log infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="added log infos" />
+    <MESSAGE value="implemented two buttons for start screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented two buttons for start screen" />
   </component>
 </project>

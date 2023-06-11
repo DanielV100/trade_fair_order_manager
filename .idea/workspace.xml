@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented image icons">
-      <change beforePath="$PROJECT_DIR$/src/code/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="added logs">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/model/Button_NewOrder_Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/model/TextField_FocusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/view/NewOrder_JPanel_ContactData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/view/NewOrder_OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/trade_fair_order_manager.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686483383274</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added logs">
+      <created>1686483769875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686483769875</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +166,7 @@
     <MESSAGE value="implemented fonts" />
     <MESSAGE value="added font modes (thin, regular, bold)" />
     <MESSAGE value="implemented image icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented image icons" />
+    <MESSAGE value="added logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logs" />
   </component>
 </project>

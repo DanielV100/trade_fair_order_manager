@@ -63,7 +63,7 @@ public class Start_OrderManager {
     private JButton createButton(String key, Color color, String pathToIcon, ActionListener actionListener) {
         logger.info("Creating buttons");
         JButton jButton = new JButton(controller.getAppProperties(key));
-        jButton.setFont(controller.createRobotoFont(sizes.getFontSizeStandard(), 0));
+        jButton.setFont(controller.createRobotoFont(sizes.getFontSizeHeading(), 0));
         jButton.setIcon(controller.createImageIcons(pathToIcon));
         jButton.setBackground(color);
         jButton.addActionListener(actionListener);

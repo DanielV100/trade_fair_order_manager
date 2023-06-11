@@ -13,9 +13,10 @@ public class NewOrder_OrderManager {
         //centering the application on start
         frameNewOrder.setLocationRelativeTo(null);
         frameNewOrder.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-       // frameNewOrder.add(createStartView(width, height));
         frameNewOrder.setLayout(null);
         frameNewOrder.add(new NewOrder_JPanel_ContactData(500, 350));
+        //frameNewOrder.add(new NewOrder_JScrollPane_OrderList(700, 700));
+        frameNewOrder.add(new NewOrder_TabPane_OrderList(700, 800));
         frameNewOrder.setVisible(true);
     }
 }

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="changed layout to FlowLayout">
-      <change beforePath="$PROJECT_DIR$/src/code/model/TextField_FocusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/TextField_FocusListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/view/NewOrder_JPanel_ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/NewOrder_JPanel_ContactData.java" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="changed project structure">
+      <change afterPath="$PROJECT_DIR$/src/resources/Sizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/model/textfields/TextField_FocusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/textfields/TextField_FocusListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/Start_OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_JPanel_ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_JPanel_ContactData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686506236636</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finished contact data">
+      <created>1686506602935</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686506602935</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changed project structure">
+      <created>1686506823105</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686506823105</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +201,8 @@
     <MESSAGE value="implemented logic for adding new order" />
     <MESSAGE value="implemented notes" />
     <MESSAGE value="changed layout to FlowLayout" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed layout to FlowLayout" />
+    <MESSAGE value="finished contact data" />
+    <MESSAGE value="changed project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed project structure" />
   </component>
 </project>

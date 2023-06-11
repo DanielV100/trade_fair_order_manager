@@ -4,6 +4,7 @@ import code.controller.Controller;
 import code.model.buttons.Button_NewOrder_Action;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import resources.Sizes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +14,7 @@ import java.awt.event.ActionListener;
  * View at start of the application.
  */
 public class Start_OrderManager {
+    Sizes sizes = new Sizes();
     Logger logger = LogManager.getLogger(Start_OrderManager.class);
     Controller controller = new Controller();
 
@@ -61,7 +63,7 @@ public class Start_OrderManager {
     private JButton createButton(String key, Color color, String pathToIcon, ActionListener actionListener) {
         logger.info("Creating buttons");
         JButton jButton = new JButton(controller.getAppProperties(key));
-        jButton.setFont(controller.createRobotoFont(18f, 0));
+        jButton.setFont(controller.createRobotoFont(sizes.getFontSizeStandard(), 0));
         jButton.setIcon(controller.createImageIcons(pathToIcon));
         jButton.setBackground(color);
         jButton.addActionListener(actionListener);

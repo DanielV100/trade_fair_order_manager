@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented FlatLaf">
-      <change afterPath="$PROJECT_DIR$/src/code/model/FontMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/roboto-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/fonts/roboto-light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented fonts">
       <change beforePath="$PROJECT_DIR$/src/code/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/model/FontMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/FontMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/Start_TradeManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686480225236</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="implemented fonts">
+      <created>1686481308340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686481308340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +135,7 @@
     <MESSAGE value="added log infos" />
     <MESSAGE value="implemented two buttons for start screen" />
     <MESSAGE value="implemented FlatLaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented FlatLaf" />
+    <MESSAGE value="implemented fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented fonts" />
   </component>
 </project>

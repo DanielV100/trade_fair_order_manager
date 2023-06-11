@@ -34,7 +34,7 @@ public class Start_TradeManager {
 
     private JButton createButton(String key, Color color) {
         JButton jButton = new JButton(controller.getAppProperties(key));
-        jButton.setFont(controller.createRobotoLight(18f));
+        jButton.setFont(controller.createRobotoFont(18f, 0));
         jButton.setBackground(color);
         return jButton;
     }

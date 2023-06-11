@@ -14,8 +14,8 @@ public class Controller {
     public Controller() {
     }
 
-    public Font createRobotoLight(float size) {
-        return fontMaker.createRobotoLight(size);
+    public Font createRobotoFont(float size, int mode) {
+        return fontMaker.createRobotoFont(size, mode);
     }
 
     public String getAppProperties(String key) {

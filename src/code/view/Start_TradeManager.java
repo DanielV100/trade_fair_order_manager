@@ -26,15 +26,16 @@ public class Start_TradeManager {
         JPanel jPanelStart = new JPanel();
         jPanelStart.setLayout(new GridLayout(1, 2));
         jPanelStart.setSize(width, height);
-        jPanelStart.add(createButton("start_trademanager_buttonneworder", Color.WHITE));
-        jPanelStart.add(createButton("start_trademanager_buttonarchive", Color.LIGHT_GRAY));
+        jPanelStart.add(createButton("start_trademanager_buttonneworder", Color.WHITE, "resources/icons/add_order_icon.png"));
+        jPanelStart.add(createButton("start_trademanager_buttonarchive", Color.LIGHT_GRAY, "resources/icons/archive_icon.png"));
 
         return jPanelStart;
     }
 
-    private JButton createButton(String key, Color color) {
+    private JButton createButton(String key, Color color, String pathToIcon) {
         JButton jButton = new JButton(controller.getAppProperties(key));
         jButton.setFont(controller.createRobotoFont(18f, 0));
+        jButton.setIcon(controller.createImageIcons(pathToIcon));
         jButton.setBackground(color);
         return jButton;
     }

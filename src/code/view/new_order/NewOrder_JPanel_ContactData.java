@@ -1,8 +1,8 @@
-package code.view;
+package code.view.new_order;
 
 import code.controller.Controller;
-import code.model.TextField_FocusListener;
-import code.model.TextField_MouseListener;
+import code.model.textfields.TextField_FocusListener;
+import code.model.textfields.TextField_MouseListener;
 
 import javax.swing.*;
 import java.awt.*;

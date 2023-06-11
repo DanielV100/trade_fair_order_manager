@@ -1,4 +1,4 @@
-package code.model;
+package code.model.textfields;
 
 import javax.swing.*;
 import java.awt.*;

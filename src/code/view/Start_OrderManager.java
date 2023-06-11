@@ -1,7 +1,7 @@
 package code.view;
 
 import code.controller.Controller;
-import code.model.Button_NewOrder_Action;
+import code.model.buttons.Button_NewOrder_Action;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

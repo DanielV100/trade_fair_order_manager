@@ -1,4 +1,4 @@
-package code.view;
+package code.view.new_order;
 
 import code.controller.Controller;
 

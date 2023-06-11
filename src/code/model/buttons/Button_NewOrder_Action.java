@@ -1,6 +1,6 @@
-package code.model;
+package code.model.buttons;
 
-import code.view.NewOrder_OrderManager;
+import code.view.new_order.NewOrder_OrderManager;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

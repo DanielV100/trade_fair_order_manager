@@ -1,17 +1,11 @@
 package code.controller;
 
-import code.model.AppPropertiesGetter;
-import code.model.FontMaker;
-import code.model.ImageIconMaker;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import code.model.helpers.AppPropertiesGetter;
+import code.model.helpers.FontMaker;
+import code.model.helpers.ImageIconMaker;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 
 public class Controller {
     AppPropertiesGetter appPropertiesGetter = new AppPropertiesGetter();

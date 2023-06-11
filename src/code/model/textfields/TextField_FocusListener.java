@@ -1,4 +1,6 @@
-package code.model;
+package code.model.textfields;
+
+import code.model.helpers.FontMaker;
 
 import javax.swing.*;
 import java.awt.*;

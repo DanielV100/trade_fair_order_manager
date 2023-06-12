@@ -1,5 +1,4 @@
 import code.view.Start_OrderManager;
-import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,6 +11,5 @@ public class Main {
         FlatLightLaf.setup();
         logger.info("Starting application");
         Start_OrderManager start_tradeManager = new Start_OrderManager(400, 300);
-
     }
 }

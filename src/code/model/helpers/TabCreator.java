@@ -45,6 +45,7 @@ public class TabCreator {
                 DefaultTableModel model = null;
                 for (int i = 0; i < NewOrder_TabPane_OrderOverview.jTables.size(); i++) {
                     JTable jTable =  NewOrder_TabPane_OrderOverview.jTables.get(i);
+                    //order list table "bags" should only write in order view table "bags" --> tables (config files) shouldn't have the same name!
                     if(jTable.getName().equals(fileName)) {
                         model = (DefaultTableModel) jTable.getModel();
                     }
@@ -63,7 +64,20 @@ public class TabCreator {
                 if(allCellsFilled) {
                     model.addRow(rowData);
                 }
-
+                //-1 --> cell is added to table
+            } else if (e.getColumn() == -1) {
+                System.out.println("Added row");
+                int columnPurchasePriceIndex = 0;
+                for (int i = 0; i < table.getColumnCount(); i++) {
+                    if(table.getColumnName(i).equals("EK")) {
+                        columnPurchasePriceIndex = i;
+                    }
+                }
+                NewOrder_TabPane_OrderOverview.purchasePrice = 0;
+                for (int count = 0; count < table.getRowCount(); count++){
+                    NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(count, columnPurchasePriceIndex).toString());
+                }
+                System.out.println("Purchase Price: " + NewOrder_TabPane_OrderOverview.purchasePrice);
             }
         });
 

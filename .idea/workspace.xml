@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented order overview" />
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="working">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_JPanel_ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_JPanel_ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderOverview.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686600722106</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="working">
+      <created>1686601149851</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686601149851</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +257,7 @@
     <MESSAGE value="added csv reader for order list" />
     <MESSAGE value="implemented tab creator" />
     <MESSAGE value="implemented order overview" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented order overview" />
+    <MESSAGE value="working" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
   </component>
 </project>

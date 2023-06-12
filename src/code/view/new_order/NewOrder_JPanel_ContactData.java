@@ -26,7 +26,7 @@ public class NewOrder_JPanel_ContactData extends JPanel {
             if(i == jLabels.length-1) {
                 JTextArea jTextArea = new JTextArea();
                 jTextArea.setFont(controller.createRobotoFont(sizes.getFontSizeStandard(), 1));
-                jTextArea.setPreferredSize(new Dimension(300, 100));
+                jTextArea.setPreferredSize(new Dimension(350, 100));
                 jTextArea.setOpaque(false);
                 jTextArea.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY));
                 this.add(jTextArea);
@@ -64,7 +64,7 @@ public class NewOrder_JPanel_ContactData extends JPanel {
             jTextFields[i] = new JTextField(placeholder[i]);
             jTextFields[i].setOpaque(false);
             jTextFields[i].setForeground(Color.LIGHT_GRAY);
-            jTextFields[i].setPreferredSize(new Dimension(300, 20));
+            jTextFields[i].setPreferredSize(new Dimension(350, 20));
             jTextFields[i].addFocusListener(new TextField_FocusListener());
             jTextFields[i].addMouseListener(new TextField_MouseListener());
             jTextFields[i].setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY));

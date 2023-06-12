@@ -13,6 +13,7 @@ public class NewOrder_TabPane_OrderOverview extends JTabbedPane {
     TabCreator configFileReader = new TabCreator();
     Sizes sizes = new Sizes();
     Controller controller = new Controller();
+    public static double purchasePrice = 0;
     public static List<JTable> jTables = new ArrayList<>();
     public NewOrder_TabPane_OrderOverview(int width, int height) {
         this.setBounds(20, 400, width, height);

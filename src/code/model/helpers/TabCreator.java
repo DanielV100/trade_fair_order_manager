@@ -73,10 +73,7 @@ public class TabCreator {
                         columnPurchasePriceIndex = i;
                     }
                 }
-                NewOrder_TabPane_OrderOverview.purchasePrice = 0;
-                for (int count = 0; count < table.getRowCount(); count++){
-                    NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(count, columnPurchasePriceIndex).toString());
-                }
+                    NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(table.getRowCount()-1, columnPurchasePriceIndex).toString());
                 System.out.println("Purchase Price: " + NewOrder_TabPane_OrderOverview.purchasePrice);
             }
         });

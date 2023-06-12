@@ -1,6 +1,7 @@
 package code.model.jfilechooser;
 
 import code.controller.Controller;
+import code.model.helpers.TabCreator;
 import resources.Sizes;
 
 import javax.swing.*;
@@ -8,12 +9,11 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 
 public class JFileChooser_ActionListener implements ActionListener {
     Controller controller = new Controller();
+    TabCreator configFileReader = new TabCreator();
     Sizes sizes = new Sizes();
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -26,23 +26,45 @@ public class JFileChooser_ActionListener implements ActionListener {
         }
     }
     private JScrollPane createOrderList(File configFile) {
-        JScrollPane jScrollPane = new JScrollPane(createTableWithProducts(configFile));
+        saveConfigFile(configFile);
+        JScrollPane jScrollPane = new JScrollPane(configFileReader.createTableWithProducts(configFile.getName()));
         jScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         return jScrollPane;
+    }
+
+    private void saveConfigFile(File configFile) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(configFile));
+            FileWriter fileWriter = new FileWriter(new File("src/resources/config", configFile.getName()));
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            String line;
+            while ((line = reader.readLine()) != null) {
+                printWriter.println(line);
+            }
+            reader.close();
+            printWriter.close();
+        } catch (Exception e) {
+
+        }
+
     }
     private JTable createTableWithProducts(File configFile) {
         DefaultTableModel tableModel = new DefaultTableModel();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(configFile));
+            FileWriter fileWriter = new FileWriter(new File("src/resources/config", configFile.getName()));
+            PrintWriter printWriter = new PrintWriter(fileWriter);
             String headerLine = reader.readLine();
             String[] columnNames = headerLine.split(";");
             tableModel.setColumnIdentifiers(columnNames);
             String line;
             while ((line = reader.readLine()) != null) {
+                printWriter.println(line);
                 String[] rowData = line.split(";");
                 tableModel.addRow(rowData);
             }
             reader.close();
+            printWriter.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

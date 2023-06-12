@@ -12,5 +12,6 @@ public class Main {
         FlatLightLaf.setup();
         logger.info("Starting application");
         Start_OrderManager start_tradeManager = new Start_OrderManager(400, 300);
+
     }
 }

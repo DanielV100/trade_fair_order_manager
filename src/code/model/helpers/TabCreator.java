@@ -51,11 +51,19 @@ public class TabCreator {
                 }
                 int row = e.getFirstRow();
                 Object[] rowData = new Object[table.getColumnCount()];
+                //e.g. for clothes with different sizes (s, m, l) you have to fill in e.g. 0 1 1 --> all cells have to be filled
+                boolean allCellsFilled = true;
                 for (int col = 0; col < table.getColumnCount(); col++) {
                     Object value = table.getValueAt(row, col);
+                    if(value.toString().equals("")) {
+                        allCellsFilled = false;
+                    }
                     rowData[col] = value;
                 }
-                model.addRow(rowData);
+                if(allCellsFilled) {
+                    model.addRow(rowData);
+                }
+
             }
         });
 

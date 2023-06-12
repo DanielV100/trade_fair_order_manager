@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented tab creator">
-      <change afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_ScrollPane_OrderOverview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderOverview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/model/jfilechooser/JFileChooser_ActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/jfilechooser/JFileChooser_ActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_OrderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderList.java" afterDir="false" />
-    </list>
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="implemented order overview" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686582471230</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="implemented order overview">
+      <created>1686600722106</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686600722106</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +243,7 @@
     <MESSAGE value="implemented order list tabbed view" />
     <MESSAGE value="added csv reader for order list" />
     <MESSAGE value="implemented tab creator" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented tab creator" />
+    <MESSAGE value="implemented order overview" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented order overview" />
   </component>
 </project>

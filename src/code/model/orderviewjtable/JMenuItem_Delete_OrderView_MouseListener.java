@@ -24,6 +24,7 @@ public class JMenuItem_Delete_OrderView_MouseListener implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
+        //getting clicked row and delete it from order overview
         int clickedRowIndex = clickedJTable.rowAtPoint(mouseEventClickedJTable.getPoint());
         Object[] rowData = null;
         //checks for valid row
@@ -44,7 +45,7 @@ public class JMenuItem_Delete_OrderView_MouseListener implements MouseListener {
         JTable orderListTableToClear = null;
         List<Integer> quantityIndexes = null;
         for (JTable orderListTable : orderListTables) {
-            //getting the correct table from order list
+            //getting the correct table (to clear) from order list
             if (orderListTable.getName().equals(clickedJTable.getName())) {
                 orderListTableToClear = orderListTable;
                 quantityIndexes = new ArrayList<>();
@@ -56,6 +57,7 @@ public class JMenuItem_Delete_OrderView_MouseListener implements MouseListener {
                 }
             }
         }
+        //searching for the corrected row to clear
         DefaultTableModel modelTableOrderList = (DefaultTableModel) orderListTableToClear.getModel();
         Object[] rowDataFromOrderList;
         int rowCountTemp = modelTableOrderList.getRowCount();

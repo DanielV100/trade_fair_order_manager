@@ -1,6 +1,8 @@
 package code.model.helpers;
 
 import code.controller.Controller;
+import code.model.orderviewjtable.JTable_OrderView_MouseListener;
+import code.view.new_order.NewOrder_TabPane_OrderList;
 import code.view.new_order.NewOrder_TabPane_OrderOverview;
 import resources.Sizes;
 
@@ -38,13 +40,15 @@ public class TabCreator {
         table.setRowHeight(30);
         table.setShowGrid(true);
         if(!isOrderList) {
-            NewOrder_TabPane_OrderOverview.jTables.add(table);
+            table.addMouseListener(new JTable_OrderView_MouseListener());
+            NewOrder_TabPane_OrderOverview.oderOverviewTables.add(table);
         }
+        //adding row from order list to order overview
         tableModel.addTableModelListener(e -> {
             if(table.getColumnName(e.getColumn()).startsWith("quantity")) {
                 DefaultTableModel model = null;
-                for (int i = 0; i < NewOrder_TabPane_OrderOverview.jTables.size(); i++) {
-                    JTable jTable =  NewOrder_TabPane_OrderOverview.jTables.get(i);
+                for (int i = 0; i < NewOrder_TabPane_OrderOverview.oderOverviewTables.size(); i++) {
+                    JTable jTable =  NewOrder_TabPane_OrderOverview.oderOverviewTables.get(i);
                     //order list table "bags" should only write in order view table "bags" --> tables (config files) shouldn't have the same name!
                     if(jTable.getName().equals(fileName)) {
                         model = (DefaultTableModel) jTable.getModel();
@@ -73,7 +77,7 @@ public class TabCreator {
                         columnPurchasePriceIndex = i;
                     }
                 }
-                    NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(table.getRowCount()-1, columnPurchasePriceIndex).toString());
+                //NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(table.getRowCount()-1, columnPurchasePriceIndex).toString());
                 System.out.println("Purchase Price: " + NewOrder_TabPane_OrderOverview.purchasePrice);
             }
         });
@@ -85,7 +89,11 @@ public class TabCreator {
         File[] filesInDirectory = configFile.listFiles();
         JScrollPane jScrollPane = null;
         for (File file : filesInDirectory) {
-            jScrollPane = new JScrollPane(createTableWithProducts(file.getName(), isOrderList));
+            JTable orderListTable = createTableWithProducts(file.getName(), isOrderList);
+            if(isOrderList) {
+                NewOrder_TabPane_OrderList.orderListTables.add(orderListTable);
+            }
+            jScrollPane = new JScrollPane(orderListTable);
             jScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
             jTabbedPane.addTab(file.getName(), jScrollPane);
         }

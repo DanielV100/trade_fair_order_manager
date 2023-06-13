@@ -14,7 +14,7 @@ public class NewOrder_TabPane_OrderOverview extends JTabbedPane {
     Sizes sizes = new Sizes();
     Controller controller = new Controller();
     public static double purchasePrice = 0;
-    public static List<JTable> jTables = new ArrayList<>();
+    public static List<JTable> oderOverviewTables = new ArrayList<>();
     public NewOrder_TabPane_OrderOverview(int width, int height) {
         this.setBounds(20, 400, width, height);
         this.setFont(controller.createRobotoFont(sizes.getFontSizeStandard(), 2));

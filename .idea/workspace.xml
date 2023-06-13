@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="attempt to calc purchase price">
+    <list default="true" id="7626b356-5ed8-43ab-8be5-92a4aa3921bf" name="Changes" comment="corrected price calculation">
+      <change afterPath="$PROJECT_DIR$/src/code/model/orderviewjtable/JMenuItem_Delete_OrderView_MouseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/model/orderviewjtable/JTable_OrderView_MouseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_ContextMenu_OrderOverview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/model/helpers/TabCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderOverview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/view/new_order/NewOrder_TabPane_OrderOverview.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686602881026</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="corrected price calculation">
+      <created>1686603579450</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686603579450</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +283,7 @@
     <MESSAGE value="implemented order overview" />
     <MESSAGE value="working" />
     <MESSAGE value="attempt to calc purchase price" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt to calc purchase price" />
+    <MESSAGE value="corrected price calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected price calculation" />
   </component>
 </project>

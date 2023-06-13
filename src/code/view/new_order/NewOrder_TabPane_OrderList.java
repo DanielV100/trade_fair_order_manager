@@ -8,11 +8,14 @@ import resources.Sizes;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NewOrder_TabPane_OrderList extends JTabbedPane {
     TabCreator configFileReader = new TabCreator();
     Sizes sizes = new Sizes();
     Controller controller = new Controller();
+    public static List<JTable> orderListTables = new ArrayList<>();
     public NewOrder_TabPane_OrderList(int width, int height) {
         this.setBounds(550, 10, width, height);
         this.setFont(controller.createRobotoFont(sizes.getFontSizeStandard(), 2));

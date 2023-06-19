@@ -17,6 +17,7 @@ public class NewOrder_OrderManager {
         frameNewOrder.add(new NewOrder_JPanel_ContactData(500, 350));
         frameNewOrder.add(new NewOrder_TabPane_OrderList(820, 750));
         frameNewOrder.add(new NewOrder_TabPane_OrderOverview(500, 250));
+        frameNewOrder.add(new NewOrder_JPanel_FinishOrder(500, 50));
         frameNewOrder.setVisible(true);
     }
 }

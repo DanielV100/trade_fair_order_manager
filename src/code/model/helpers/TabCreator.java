@@ -2,6 +2,7 @@ package code.model.helpers;
 
 import code.controller.Controller;
 import code.model.orderviewjtable.JTable_OrderView_MouseListener;
+import code.view.new_order.NewOrder_JPanel_FinishOrder;
 import code.view.new_order.NewOrder_TabPane_OrderList;
 import code.view.new_order.NewOrder_TabPane_OrderOverview;
 import resources.Sizes;
@@ -10,6 +11,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.io.*;
+import java.text.DecimalFormat;
 
 public class TabCreator {
     Controller controller = new Controller();
@@ -56,7 +58,7 @@ public class TabCreator {
                 }
                 int row = e.getFirstRow();
                 Object[] rowData = new Object[table.getColumnCount()];
-                //e.g. for clothes with different sizes (s, m, l) you have to fill in e.g. 0 1 1 --> all cells have to be filled
+                //e.g. for clothes with different sizes (s, m, l) you have to fill in e.g. 0 1 1 --> all cells have to be filled, than it'll be added to overview
                 boolean allCellsFilled = true;
                 for (int col = 0; col < table.getColumnCount(); col++) {
                     Object value = table.getValueAt(row, col);
@@ -68,17 +70,10 @@ public class TabCreator {
                 if(allCellsFilled) {
                     model.addRow(rowData);
                 }
-                //-1 --> cell is added to table
+                //-1 --> cell is added to order overview table
             } else if (e.getColumn() == -1) {
-                System.out.println("Added row");
-                int columnPurchasePriceIndex = 0;
-                for (int i = 0; i < table.getColumnCount(); i++) {
-                    if(table.getColumnName(i).equals("EK")) {
-                        columnPurchasePriceIndex = i;
-                    }
-                }
-                //NewOrder_TabPane_OrderOverview.purchasePrice += Double.parseDouble(table.getValueAt(table.getRowCount()-1, columnPurchasePriceIndex).toString());
-                System.out.println("Purchase Price: " + NewOrder_TabPane_OrderOverview.purchasePrice);
+                DecimalFormat df = new DecimalFormat("#.##");
+                NewOrder_JPanel_FinishOrder.purchasePrice.setText("Purchase price: " + df.format(PurchasePriceCalculator.calcPurchasePrice()) + "€");
             }
         });
 

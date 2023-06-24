@@ -1,6 +1,7 @@
 package code.view.new_order;
 
 import code.controller.Controller;
+import code.model.buttons.Button_Export_Finished_Order;
 import resources.Sizes;
 
 import javax.swing.*;
@@ -21,6 +22,7 @@ public class NewOrder_JPanel_FinishOrder extends JPanel {
     }
     private JButton createExportToPDFButton() {
         JButton jButtonExport = new JButton("Export to PDF");
+        jButtonExport.addActionListener(new Button_Export_Finished_Order());
         return jButtonExport;
     }
 

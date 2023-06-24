@@ -14,6 +14,7 @@ import java.awt.*;
 public class NewOrder_JPanel_ContactData extends JPanel {
     Sizes sizes = new Sizes();
     Controller controller = new Controller();
+    public static JTextField[] jTextFields = new JTextField[7];
 
     public NewOrder_JPanel_ContactData(int width, int height) {
         this.setBounds(20,10, width, height);
@@ -59,7 +60,6 @@ public class NewOrder_JPanel_ContactData extends JPanel {
     private JTextField[] createJTextFields() {
         String[] placeholder = {"e.g. Max Mustermann", "e.g. Lederwaren GmbH", "e.g. Leder-Manufaktur-Straße 12", "e.g. 74889 Sinsheim, DE", "e.g. DE814881212", "e.g. leder@waren.com", "e.g. +49 15112791554", ""};
         //length isn't eight like at the jlabels, because a textarea is needed as last component (not a jtextfield)
-        JTextField[] jTextFields = new JTextField[7];
         for (int i = 0; i < jTextFields.length; i++) {
             jTextFields[i] = new JTextField(placeholder[i]);
             jTextFields[i].setOpaque(false);

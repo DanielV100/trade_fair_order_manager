@@ -1,5 +1,7 @@
 package code.model.buttons;
 
+import code.view.new_order.NewOrder_JPanel_ContactData;
+import code.view.new_order.NewOrder_JPanel_FinishOrder;
 import code.view.new_order.NewOrder_TabPane_OrderOverview;
 
 import javax.swing.*;
@@ -15,11 +17,16 @@ public class Button_Export_Finished_Order implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         List<JTable> orderOverviewTables = NewOrder_TabPane_OrderOverview.oderOverviewTables;
-        writeTablesToCSV(orderOverviewTables, "test.csv");
+        writeTablesToCSV(orderOverviewTables, getExportedFileDestinationFromUser());
     }
-    public static void writeTablesToCSV(List<JTable> orderOverviewTables, String csvFilePath) {
+    private void writeTablesToCSV(List<JTable> orderOverviewTables, String csvFilePath) {
         StringBuilder csvData = new StringBuilder();
-
+        csvData.append("Kundendaten:"+"\n");
+        JTextField[] jTextFields = NewOrder_JPanel_ContactData.jTextFields;
+        for (JTextField contactData : jTextFields) {
+            csvData.append(contactData.getText() + "\n");
+        }
+        csvData.append("\n" + "Bestellliste");
         for (JTable orderOverviewTable : orderOverviewTables) {
             csvData.append(orderOverviewTable.getName() + ":\n");
             int rowCount = orderOverviewTable.getRowCount();
@@ -50,11 +57,22 @@ public class Button_Export_Finished_Order implements ActionListener {
             }
             csvData.append("\n\n");
         }
+        csvData.append(NewOrder_JPanel_FinishOrder.purchasePrice.getText());
 
         try (FileWriter writer = new FileWriter(csvFilePath)) {
             writer.write(csvData.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    private String getExportedFileDestinationFromUser() {
+        JFileChooser fileChooser = new JFileChooser();
+        int result = fileChooser.showSaveDialog(null);
+
+        String csvFilePath = "";
+        if (result == JFileChooser.APPROVE_OPTION) {
+            csvFilePath = fileChooser.getSelectedFile().getAbsolutePath();
+        }
+        return csvFilePath + ".csv";
     }
 }
